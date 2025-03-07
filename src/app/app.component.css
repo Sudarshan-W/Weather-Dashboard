@@ -1,0 +1,123 @@
+/* General styling for the app */
+/* .app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f4f7;
+    border-radius: 10px;
+} */
+
+
+/* Styling for the form and input */
+  /* form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  } */
+
+  
+  
+
+    .app {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 80px auto 60px auto; /* Added margin for header and footer */
+        padding: 20px;
+        background-color: #c8cccf; /* Fallback color */
+        background-image: url("../assets/Weather-BG.jpg");
+         /* Path to your image in the assets folder */
+        background-size: cover; /* Ensures the image covers the entire div */
+        background-position: center; /* Centers the image */
+        background-attachment: fixed; /* Keeps the background fixed when scrolling */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        border-radius: 10px;
+        color: rgb(187, 181, 181); /* Text color for better contrast */
+        min-height: 500px; /* Ensure content doesn't overlap footer */
+
+    }
+  
+  
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #18d3f4;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+ /* Loading and error message styling */
+p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Styling for the 'loading' message when it's displayed */
+  p.loading {
+    color: #007bff; /* Blue color for loading */
+  }
+  
+  /* Styling for the 'error' message when it's displayed */
+  p.error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Card styling for the weather display  //.card */
+  form {       
+    width: 500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    border-radius: 26px;
+    text-align: justify;
+    transform-style: preserve-3d;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+  }
+  
+  /* .myrgb::after */
+  form::after {
+    content: "";
+    background: linear-gradient(45deg,
+      #ff0000 0%, 
+      #ff9a00 10%,
+      #d0de21 20%,
+      #4fdc4a 30%, 
+      #3fdad8 40%,
+      #2fc9e2 50%, 
+      #1c7fee 60%, 
+      #5f15f2 70%, 
+      #ba0cf8 80%, 
+      #fb07d9 90%, 
+      #ff0000 100% ) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    animation: rgb 2.5s linear infinite;
+    border-radius: 16px;
+    filter: blur(8px);
+    transform: translateZ(-1px);
+  }
+  
+  @keyframes rgb {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
